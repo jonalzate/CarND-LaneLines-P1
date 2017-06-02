@@ -1,5 +1,7 @@
 #**FINDING ROAD LANE LINES PROJECT**
 
+---
+
 **Finding Lane Lines on the Road**
 
 The goals / steps of this project are the following:
@@ -7,6 +9,7 @@ The goals / steps of this project are the following:
 * Reflect on your work in a written report
 
 ###***Reflection***
+
 ###1. Pipeline Description
 I took the following steps to build my pipeline. 
 * Read input image and convert to numpy array
@@ -27,22 +30,27 @@ I took the following steps to build my pipeline.
   - Using helper function weighted_img apply weights for Houghlines output image and the original input image to create the final output image with lane lines drawn
   
 Final output is the following:
+
+[//]: # (Image References)
+
 [image1]: ./test_images/lane_lines_final.png "Final output"
+
+![alt text][image1]
 
 To be able to produce the above output, I added the following methods to helper functions.
 These methods are called from within _draw\_lines()_ 
 * _slope\_intercept\_avg()_
- - Calculates the slope and intercept for each line found in Houghlines
- - Using left (negative slope) or right(positive slope) to separate each lane line
- - Calculate line length
- - Applies weights to longer lines
- - Returns output as (slope, intercept)
+   - Calculates the slope and intercept for each line found in Houghlines
+   - Using left (negative slope) or right(positive slope) to separate each lane line
+   - Calculate line length
+   - Applies weights to longer lines
+   - Returns output as (slope, intercept)
 * _pixel\_line\_points()_
- - Converts from (slope, intercept) to point form (x1, y1)
+   - Converts from (slope, intercept) to point form (x1, y1)
 * _lane\_lines()_
- - Calls _slope\_intercept\_avg()_ to obtain lane lines
- - Calls _pixel\_line\_points()_ to convert back to point form 
- - returns one single line
+   - Calls _slope\_intercept\_avg()_ to obtain lane lines
+   - Calls _pixel\_line\_points()_ to convert back to point form 
+   - returns one single line
 
 ###2. Potential Short Commings
 For the video challenge, I was able to run my pipeline on a subclip (5 sec) of the video. I have added 

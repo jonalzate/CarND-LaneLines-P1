@@ -1,4 +1,4 @@
-#**FINDING ROAD LANE LINES PROJECT**
+# ** FINDING ROAD LANE LINES PROJECT**
 
 ---
 
@@ -8,9 +8,9 @@ The goals / steps of this project are the following:
 * Make a pipeline that finds lane lines on the road
 * Reflect on your work in a written report
 
-###***Reflection***
+### ***Reflection***
 
-###1. Pipeline Description
+### 1. Pipeline Description
 I took the following steps to build my pipeline. 
 * Read input image and convert to numpy array
   - This is a basic step done with the imported python package _matplotlib.image_
@@ -31,11 +31,8 @@ I took the following steps to build my pipeline.
   
 Final output is the following:
 
-[//]: # (Image References)
+![image1](/test_images/lane_lines_final.png)
 
-[image1]: ./test_images/lane_lines_final.png "Final output"
-
-![alt text][image1]
 
 To be able to produce the above output, I added the following methods to helper functions.
 These methods are called from within _draw\_lines()_ 

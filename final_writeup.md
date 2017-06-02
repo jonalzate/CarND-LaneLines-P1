@@ -49,7 +49,7 @@ These methods are called from within _draw\_lines()_
    - Calls _pixel\_line\_points()_ to convert back to point form 
    - returns one single line
 
-###2. Potential Short Commings
+### 2. Potential Short Commings
 For the video challenge, I was able to run my pipeline on a subclip (5 sec) of the video. I have added 
 the video to the notebook. The challenge video brought out many short comings from my pipeline, here are
 some of the things that I noticed affected the pipeline 
@@ -58,7 +58,7 @@ and might need to use other nonlinear method to care of curves when calculating 
 * The change of color in the pavement causes the white dotted lines to be harder find  by the pipeline
 * The shadow in the front of the road causes a similar effect to that of the pavement color
 
-###3. Potential Improvements
+### 3. Potential Improvements
 May be apply another color selection to take care of the change of color in the pavement from dark to light
 gray. I would add more weight to the white color mask as a starting point.
 As mentioned aboved, I would use a nonlinear method to calculate the lines that can 
